@@ -1,0 +1,879 @@
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away
+$ git init
+Initialized empty Git repository in C:/Users/Hyperion/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/.git/       
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (master)
+$ git add README.md
+warning: LF will be replaced by CRLF in README.md.
+The file will have its original line endings in your working directory
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (master)
+$ git commit -m "first commit"
+[master (root-commit) 5a4a077] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (master)
+$ git branch -M main
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ git remote add origin https://github.com/MNGiit/galaxy-far-far-away.git
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Writing objects: 100% (3/3), 243 bytes | 243.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/MNGiit/galaxy-far-far-away.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ ls
+README.md
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$
+$ ls
+README.md
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ mkdir death_star
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ git add death_star
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ git commit -m "create death_star"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ ls
+death_star/  README.md
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ cd death_star
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/death_star (main)
+$ touch darth_vader.txt && touch princess_leia.txt && touch storm_trooper.txt
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/death_star (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ./
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/death_star (main)
+$ cd ..
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ cd death_star/
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/death_star (main)
+$ ls
+darth_vader.txt  princess_leia.txt  storm_trooper.txt
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/death_star (main)
+$ cd ..
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ git add .
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ git commit -m "create death star, darth vader, and princess leia"
+[main e740f62] create death star, darth vader, and princess leia
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 death_star/darth_vader.txt
+ create mode 100644 death_star/princess_leia.txt
+ create mode 100644 death_star/storm_trooper.txt
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 403 bytes | 403.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/MNGiit/galaxy-far-far-away.git
+   5a4a077..e740f62  main -> main
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ mkdir tatooine
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ cd tatooine
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/tatooine (main)
+$ touch luke.txt && touch ben_kenobi.txt
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/tatooine (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ./
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/tatooine (main)
+$ cd ..
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        tatooine/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ git add tatooine/
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ git commit -m "create tatooine, luke, and ben kenobi"
+[main c8208f4] create tatooine, luke, and ben kenobi
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 tatooine/ben_kenobi.txt
+ create mode 100644 tatooine/luke.txt
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 405 bytes | 405.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/MNGiit/galaxy-far-far-away.git
+   e740f62..c8208f4  main -> main
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ cd tatooine/
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/tatooine (main)
+$ mkdir millenium_falcon
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/tatooine (main)
+$ cd millenium_falcon/
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/tatooine/millenium_falcon (main)
+$ touch han_solo.txt && touch chewbaca.txt
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/tatooine/millenium_falcon (main)
+$ cd ..
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/tatooine (main)
+$ cd ..
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ ls
+death_star/  README.md  tatooine/
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        tatooine/millenium_falcon/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ git add .
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ git commit -m "create millenium falcon, han solo, and chewbaca"
+[main b06db90] create millenium falcon, han solo, and chewbaca
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 tatooine/millenium_falcon/chewbaca.txt
+ create mode 100644 tatooine/millenium_falcon/han_solo.txt
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ git push
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 449 bytes | 449.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/MNGiit/galaxy-far-far-away.git
+   c8208f4..b06db90  main -> main
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ ls
+death_star/  README.md  tatooine/
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ cd tatooine
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/tatooine (main)
+$ mv ben_kenobi.txt obi_wan.txt
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/tatooine (main)
+$ ls
+luke.txt  millenium_falcon/  obi_wan.txt
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/tatooine (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    ben_kenobi.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        obi_wan.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/tatooine (main)
+$ git add .
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/tatooine (main)
+$ git commit -m "rename ben kenobi to obi wan using mv command"
+[main 2f1c172] rename ben kenobi to obi wan using mv command
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename tatooine/{ben_kenobi.txt => obi_wan.txt} (100%)
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/tatooine (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 334 bytes | 334.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/MNGiit/galaxy-far-far-away.git
+   b06db90..2f1c172  main -> main
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/tatooine (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/tatooine (main)
+$ ls
+luke.txt  millenium_falcon/  obi_wan.txt
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/tatooine (main)
+$ ..
+bash: ..: command not found
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/tatooine (main)
+$ ls
+luke.txt  millenium_falcon/  obi_wan.txt
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/tatooine (main)
+$ cd ..
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ ls
+death_star/  README.md  tatooine/
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ cd death_star
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/death_star (main)
+$ cp storm_trooper.txt ../tatooine
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/death_star (main)
+$ cd ..
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        tatooine/storm_trooper.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ git add .
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ git commit -m "copy storm trooper from death star to tatooine using copy command"
+[main f9d03e1] copy storm trooper from death star to tatooine using copy command
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 tatooine/storm_trooper.txt
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 348 bytes | 348.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/MNGiit/galaxy-far-far-away.git
+   2f1c172..f9d03e1  main -> main
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ ls
+death_star/  README.md  tatooine/
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ cd tatooine
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/tatooine (main)
+$ mv luke.txt millenium_falcon
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/tatooine (main)
+$ mv obi_wan.txt millenium_falcon/
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/tatooine (main)
+$ git add .
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/tatooine (main)
+$ git commit -m "move luke and obi wan into the millenium falcon using move command"
+[main bddffc2] move luke and obi wan into the millenium falcon using move command
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ rename tatooine/{ => millenium_falcon}/luke.txt (100%)
+ rename tatooine/{ => millenium_falcon}/obi_wan.txt (100%)
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/tatooine (main)
+$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 469 bytes | 469.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/MNGiit/galaxy-far-far-away.git
+   f9d03e1..bddffc2  main -> main
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/tatooine (main)
+$ ls
+millenium_falcon/  storm_trooper.txt
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/tatooine (main)
+$ mv millenium_falcon/ ..
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/tatooine (main)
+$ ls
+storm_trooper.txt
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/tatooine (main)
+$ cd ..
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    tatooine/millenium_falcon/chewbaca.txt
+        deleted:    tatooine/millenium_falcon/han_solo.txt
+        deleted:    tatooine/millenium_falcon/luke.txt
+        deleted:    tatooine/millenium_falcon/obi_wan.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        millenium_falcon/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ git add .
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ git commit -m "move millenium falcon to galaxy far far away using move command"
+[main 12d458c] move millenium falcon to galaxy far far away using move command
+ 4 files changed, 0 insertions(+), 0 deletions(-)
+ rename {tatooine/millenium_falcon => millenium_falcon}/chewbaca.txt (100%)
+ rename {tatooine/millenium_falcon => millenium_falcon}/han_solo.txt (100%)
+ rename {tatooine/millenium_falcon => millenium_falcon}/luke.txt (100%)
+ rename {tatooine/millenium_falcon => millenium_falcon}/obi_wan.txt (100%)
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ ls
+death_star/  millenium_falcon/  README.md  tatooine/
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ mv millenium_falcon/ death_star/
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ ls
+death_star/  README.md  tatooine/
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ git add .
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ git commit -m "move millenium falcon into death star using move command"
+[main a7c2a81] move millenium falcon into death star using move command
+ 4 files changed, 0 insertions(+), 0 deletions(-)
+ rename {millenium_falcon => death_star/millenium_falcon}/chewbaca.txt (100%)
+ rename {millenium_falcon => death_star/millenium_falcon}/han_solo.txt (100%)
+ rename {millenium_falcon => death_star/millenium_falcon}/luke.txt (100%)
+ rename {millenium_falcon => death_star/millenium_falcon}/obi_wan.txt (100%)
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ cd death_star
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/death_star (main)
+$ mv princess_leia.txt millenium_falcon/
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/death_star (main)
+$ cd ..
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ git add .
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ git commit -m "move princess leia into millenium falcon using move command"
+[main b5b08c5] move princess leia into millenium falcon using move command
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename death_star/{ => millenium_falcon}/princess_leia.txt (100%)
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ ls
+death_star/  README.md  tatooine/
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ cd death_star
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/death_star (main)
+$ ls
+darth_vader.txt  millenium_falcon/  storm_trooper.txt
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/death_star (main)
+$ cd millenium_falcon/
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/death_star/millenium_falcon (main)
+$ ls
+chewbaca.txt  han_solo.txt  luke.txt  obi_wan.txt  princess_leia.txt
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/death_star/millenium_falcon (main)
+$ rm obi_wan.txt
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/death_star/millenium_falcon (main)
+$ ls
+chewbaca.txt  han_solo.txt  luke.txt  princess_leia.txt
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/death_star/millenium_falcon (main)
+$ git add .
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/death_star/millenium_falcon (main)
+$ git commit -m "remove obi wan using remove command"
+[main b25dd02] remove obi wan using remove command
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 death_star/millenium_falcon/obi_wan.txt
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/death_star/millenium_falcon (main)
+$ cd ..
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/death_star (main)
+$ ls
+darth_vader.txt  millenium_falcon/  storm_trooper.txt
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/death_star (main)
+$ cd ..
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ ls
+death_star/  README.md  tatooine/
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ mkdir yavin_4
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ ls
+death_star/  README.md  tatooine/  yavin_4/
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ git add yavin_4
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ git commit -m "create yavin 4 using create command"
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ cd death_star
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/death_star (main)
+$ mv millenium_falcon/ ../yavin_4
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/death_star (main)
+$ ls
+darth_vader.txt  storm_trooper.txt
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/death_star (main)
+$ cd ..
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ ls
+death_star/  README.md  tatooine/  yavin_4/
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ cd yavin_4/
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/yavin_4 (main)
+$ ls
+millenium_falcon/
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/yavin_4 (main)
+$ cd ..
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ git add .
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ git commit -m "create yavin 4 and move millenium falcon to it"
+[main 1d4cf41] create yavin 4 and move millenium falcon to it
+ 4 files changed, 0 insertions(+), 0 deletions(-)
+ rename {death_star => yavin_4}/millenium_falcon/chewbaca.txt (100%)
+ rename {death_star => yavin_4}/millenium_falcon/han_solo.txt (100%)
+ rename {death_star => yavin_4}/millenium_falcon/luke.txt (100%)
+ rename {death_star => yavin_4}/millenium_falcon/princess_leia.txt (100%)
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ ls
+death_star/  README.md  tatooine/  yavin_4/
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ cd yavin_4/
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/yavin_4 (main)
+$ mkdir x_wing
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/yavin_4 (main)
+$ ls
+millenium_falcon/  x_wing/
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/yavin_4 (main)
+$ cd millenium_falcon/
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/yavin_4/millenium_falcon (main)$ ls
+chewbaca.txt  han_solo.txt  luke.txt  princess_leia.txt
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/yavin_4/millenium_falcon (main)$ mv princess_leia.txt  ..
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/yavin_4/millenium_falcon (main)$ ls
+chewbaca.txt  han_solo.txt  luke.txt
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/yavin_4/millenium_falcon (main)$ mv luke.txt ../x_wing/
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/yavin_4/millenium_falcon (main)$ cd ..
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/yavin_4 (main)
+$ ls
+millenium_falcon/  princess_leia.txt  x_wing/
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/yavin_4 (main)
+$ cd ..
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 5 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    yavin_4/millenium_falcon/luke.txt
+        deleted:    yavin_4/millenium_falcon/princess_leia.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        yavin_4/princess_leia.txt
+        yavin_4/x_wing/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ git add .
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ git commit -m "move leia to yavin 4 and luke into x wing"
+[main 7b7f2fc] move leia to yavin 4 and luke into x wing
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ rename yavin_4/{millenium_falcon => }/princess_leia.txt (100%)
+ rename yavin_4/{millenium_falcon => x_wing}/luke.txt (100%)
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ cd yavin_4/
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/yavin_4 (main)
+$ mv millenium_falcon/ ..
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/yavin_4 (main)
+$ ls
+princess_leia.txt  x_wing/
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/yavin_4 (main)
+$ mv x_wing/ ..
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/yavin_4 (main)
+$ ls
+princess_leia.txt
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/yavin_4 (main)
+$ cd ..
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ ls
+death_star/  millenium_falcon/  README.md  tatooine/  x_wing/  yavin_4/
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ git add .
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ git commit -m "move yavin 4 and x wing into galaxy far far away"
+[main 5e72d6b] move yavin 4 and x wing into galaxy far far away
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ rename {yavin_4/millenium_falcon => millenium_falcon}/chewbaca.txt (100%)
+ rename {yavin_4/millenium_falcon => millenium_falcon}/han_solo.txt (100%)
+ rename {yavin_4/x_wing => x_wing}/luke.txt (100%)
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ cd death_star/
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/death_star (main)
+$ ls
+darth_vader.txt  storm_trooper.txt
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/death_star (main)
+$ mkdir tie_fighter_1 && mkdir tie_fighter_2 && mkdir tie_fighter_3
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/death_star (main)
+$ ls
+darth_vader.txt  storm_trooper.txt  tie_fighter_1/  tie_fighter_2/  tie_fighter_3/
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/death_star (main)
+$ mv darth_vader tie_fighter_1
+mv: cannot stat 'darth_vader': No such file or directory
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/death_star (main)
+$ mv darth_vader.txt tie_fighter_1
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/death_star (main)
+$ ls
+storm_trooper.txt  tie_fighter_1/  tie_fighter_2/  tie_fighter_3/
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/death_star (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 7 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    darth_vader.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        tie_fighter_1/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/death_star (main)
+$ git add .
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/death_star (main)
+$ git commit -m "move darth vader into tie fighter 1"
+[main 84ab5ea] move darth vader into tie fighter 1
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename death_star/{ => tie_fighter_1}/darth_vader.txt (100%)
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/death_star (main)
+$ cp storm_trooper.txt tie_fighter_2
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/death_star (main)
+$ ls
+storm_trooper.txt  tie_fighter_1/  tie_fighter_2/  tie_fighter_3/
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/death_star (main)
+$ cd tie_fighter_2
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/death_star/tie_fighter_2 (main)$ ls
+storm_trooper.txt
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/death_star/tie_fighter_2 (main)$ cd ..
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/death_star (main)
+$ cp storm_trooper.txt tie_fighter_3
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/death_star (main)
+$ git add .
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/death_star (main)
+$ git commit -m "copy storm trooper into tie fighter 2 and 3 using copy command"
+[main aae20a7] copy storm trooper into tie fighter 2 and 3 using copy command
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 death_star/tie_fighter_2/storm_trooper.txt
+ create mode 100644 death_star/tie_fighter_3/storm_trooper.txt
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/death_star (main)
+$ mv tie_fighter_1 .. && mv tie_fighter_2 .. && mv tie_fighter_3 ..
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/death_star (main)
+$ ls
+storm_trooper.txt
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away/death_star (main)
+$ cd ..
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ ls
+death_star/  millenium_falcon/  README.md  tatooine/  tie_fighter_1/  tie_fighter_2/  tie_fighter_3/  x_wing/  yavin_4/     
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ git add .
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ git commit -m "move all tie fighters out into galaxy far far away"
+[main 3edbbe2] move all tie fighters out into galaxy far far away
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ rename {death_star/tie_fighter_1 => tie_fighter_1}/darth_vader.txt (100%)
+ rename {death_star/tie_fighter_2 => tie_fighter_2}/storm_trooper.txt (100%)
+ rename {death_star/tie_fighter_3 => tie_fighter_3}/storm_trooper.txt (100%)
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ git add .
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 10 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ ls
+death_star/  millenium_falcon/  README.md  tatooine/  tie_fighter_1/  tie_fighter_2/  tie_fighter_3/  x_wing/  yavin_4/     
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ rm -r tie_fighter_2
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ rm -r tie_fighter_3
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ ls
+death_star/  millenium_falcon/  README.md  tatooine/  tie_fighter_1/  x_wing/  yavin_4/
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ git add .
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ git commit -m "remove tie fighter 2 and 3 using remove -r"
+[main 07cca1c] remove tie fighter 2 and 3 using remove -r
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 tie_fighter_2/storm_trooper.txt
+ delete mode 100644 tie_fighter_3/storm_trooper.txt
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ rm README.md
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ touch README.md
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 11 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ git add .
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ git commit -m "Completed homework"
+[main eb62df7] Completed homework
+ 1 file changed, 1 deletion(-)
+
+~/Desktop/Dev/Perscholas/Labs/Week1Day2/galaxy-far-far-away (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 12 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
